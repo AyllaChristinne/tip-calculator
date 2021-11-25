@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop-screenshot](splitter-desktop.jpg?raw=true "Desktop")
+![desktop-screenshot](https://github.com/AyllaChristinne/tip-calculator/design/splitter-desktop.jpg?raw=true "Desktop")
 ![mobile-screenshot](splitter-mobile1.jpg?raw=true "Mobile")
 ![mobile-screenshot](splitter-mobile2.jpg?raw=true)
 
