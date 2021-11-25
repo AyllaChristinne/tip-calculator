@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="resources/styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 
 <body>
-
   <header>
     S P L I <br>
     T T E R
@@ -21,22 +20,22 @@
       <form>
         <label>Bill</label>
         <div class="input-div">
-          <img class="input-icon" src="resources/images/icon-dollar.svg" />
-          <input type="text" id="input-bill" value="0" />
+          <img class="input-icon" src="images/icon-dollar.svg" />
+          <input type="text" id="input-bill" id="input-bill" placeholder="0" />
         </div>
         <label>Select Tip %</label>
         <div class="buttons">
-          <button class="percentage-btn" type="button">5%</button>
-          <button class="percentage-btn" type="button">10%</button>
-          <button class="percentage-btn" type="button">15%</button> <br>
-          <button class="percentage-btn" type="button">25%</button>
-          <button class="percentage-btn" type="button">50%</button>
-          <input class="custom-btn" value="Custom"/>
+          <button class="percentage-btn" data-value="5">5%</button>
+          <button class="percentage-btn" data-value="10">10%</button>
+          <button class="percentage-btn" data-value="15">15%</button>
+          <button class="percentage-btn" data-value="25">25%</button>
+          <button class="percentage-btn" data-value="50">50%</button>
+          <input class="custom-tip" type="number" min="0" max="100" placeholder="Custom"/>
         </div>
         <label>Number of people</label>
         <div class="input-div">
-          <img class="input-icon" src="resources/images/icon-person.svg" />
-          <input type="text" id="input-people" value="0" />
+          <img class="input-icon" src="images/icon-person.svg" />
+          <input type="number" id="input-people" id="input-people" placeholder="0" />
       </form>
     </div>
 
@@ -47,23 +46,29 @@
         <p class="results-label">Tip Amount</p>
         <p class="per-person">/ person</p>
       </div>
-      <input class="input-result" value="$0.00"/>
+      <div class="tip-result">
+      <h1 id="tip-result">$0.00</h1>
+    </div>
     </div>
     <div class="results-total">
       <div class="results-text">
         <p class="results-label">Total</p>
         <p class="per-person">/ person</p>
       </div>
-      <input class="input-result" value="$0.00"/>
+      <div class="total-result">
+        <h1  id="total-result">$0.00</h1>
     </div>
-    <button class="reset-btn" type="reset">RESET</button>
+    </div>
+    <button class="reset-btn" type="reset" disabled>RESET</button>
   </div>
   </div>
 
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Aylla Christinne</a>.
+    Challenge by <strong><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></strong>.
+    Coded by <strong><a href="#">Aylla Christinne</a></strong>.
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

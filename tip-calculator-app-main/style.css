@@ -41,7 +41,7 @@ header{
 
 label{
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-block-end: 0.5em;
 }
 
@@ -56,7 +56,20 @@ label:nth-child(1){
     margin-top: 0px;
 }
 
-input[type="text"]{
+/* Hiding arrows from number inputs */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input{
     background-color: hsl(189, 41%, 97%);
     font-family: 'Space Mono', monospace;
     color: hsl(184, 14%, 56%);
@@ -69,7 +82,7 @@ input[type="text"]{
     padding-left: 15px;
 }
 
-.percentage-btn, .custom-btn, .reset-btn{
+.percentage-btn, .custom-tip, .reset-btn{
     font-family: 'Space Mono', monospace;
     font-size: 16px;
     padding: 10px;
@@ -77,7 +90,7 @@ input[type="text"]{
     
 }
 
-.percentage-btn, .custom-btn {
+.percentage-btn, .custom-tip {
     width: 28%;
     border: none;
     border-radius: 5px;
@@ -89,14 +102,14 @@ input[type="text"]{
     color: hsl(0, 0%, 100%);
 }
 
-.custom-btn {
+.custom-tip {
     width: 23%;
     color: hsl(186, 14%, 43%);
     font-weight: bold;
     background-color: hsl(189, 41%, 97%);
 }
 
-.percentage-btn:hover, .percentage-btn:active{
+.percentage-btn:hover, .percentage-btn:focus{
     background-color: hsl(172, 67%, 45%);
     color:hsl(183, 100%, 15%);
 }
@@ -108,24 +121,18 @@ input[type="text"]{
 .results-tip, .results-total {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    height: 80px;
 }
 
-.results input{
-    width: 70%;
-    background-color: inherit;
-    font-family: 'Space Mono', monospace;
-    text-align: right;
-    font-size: 36px;
-    font-weight: bold;
-    color:hsl(172, 67%, 45%);
-    border: none; 
-}
-
-.results p{
+.results-label{
     color:hsl(0, 0%, 100%);
     margin-block-end: 0em;
 } 
+
+.tip-result, .total-result {
+    font-weight: bold;
+    color: hsl(172, 67%, 45%);
+}
 
 .results .per-person {
     font-size: 12px;
@@ -135,7 +142,7 @@ input[type="text"]{
 
 .reset-btn {
     width: 100%;
-    margin-top: 70px;
+    margin-top: 120px;
     background-color: hsl(183, 79%, 24%);
     border: none;
     border-radius: 5px;
@@ -155,4 +162,65 @@ input[type="text"]{
     color:hsl(186, 14%, 43%);
     font-size: 12px;
     margin-top: 5px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color:hsl(186, 14%, 43%);
+}
+
+@media only screen and (max-width: 360px) {
+    .container {
+        display: block;
+        padding: 20px
+    }
+
+    .content, .input-div, .content input, .results {
+        width: 100%;
+    }
+
+    .content {
+        margin-bottom: 50px;
+    }
+
+    .input-div {
+        display: flex;
+    }
+
+    .input-icon {
+        max-height: 20px;
+        margin-top: 8px;
+        padding-left: 10px;
+    }
+
+    .percentage-btn {
+        width: 45%;
+    }
+
+    .buttons input {
+        width: 36%;
+    }
+    
+    .results {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .results-tip, .results-total {
+        padding: 15px;
+    }
+
+    .reset-btn {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .attribution {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    
+    
 }
