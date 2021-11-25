@@ -24,9 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Alt text](/design/splitter-desktop.jpg?raw=true "Desktop")
-![Alt text](/design/splitter-mobile1.jpg?raw=true "Mobile")
-![Alt text](/design/splitter-mobile2.jpg?raw=true)
+![Alt text](./design/splitter-desktop.jpg?raw=true "Desktop")
+![Alt text](design/splitter-mobile1.jpg?raw=true "Mobile")
+![Alt text](../design/splitter-mobile2.jpg?raw=true)
 
 
 ### Links
@@ -49,9 +49,9 @@ Users should be able to:
 
 
 ### Author
-- Github: (https://github.com/AyllaChristinne)
-- LinkedIn: (https://www.linkedin.com/in/aylla-christinne-766892173/)
-- Frontend Mentor: (https://www.frontendmentor.io/profile/AyllaChristinne)
+- [Github](https://github.com/AyllaChristinne)
+- [LinkedIn](https://www.linkedin.com/in/aylla-christinne-766892173/)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/AyllaChristinne)
 
 ### Acknowledgments
 Got some inspiration from [abdo-kotb's solution](https://github.com/abdo-kotb/tip-calculator-app/tree/544d7189f6be00dfa870cedeb75096dca3dc8be0)
