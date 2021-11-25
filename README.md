@@ -24,9 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Alt text](./design/splitter-desktop.jpg?raw=true "Desktop")
-![Alt text](design/splitter-mobile1.jpg?raw=true "Mobile")
-![Alt text](../design/splitter-mobile2.jpg?raw=true)
+![desktop-screenshot](splitter-desktop.jpg?raw=true "Desktop")
+![mobile-screenshot](splitter-mobile1.jpg?raw=true "Mobile")
+![mobile-screenshot](splitter-mobile2.jpg?raw=true)
 
 
 ### Links
