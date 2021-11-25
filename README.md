@@ -24,9 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop-screenshot](https://github.com/AyllaChristinne/tip-calculator/design/splitter-desktop.PNG?raw=true "Desktop")
+![desktop-screenshot](/design/splitter-desktop.PNG?raw=true "Desktop")
 ![mobile-screenshot](/design/splitter-mobile1.PNG?raw=true "Mobile")
-![mobile-screenshot](splitter-mobile2.PNG?raw=true)
+![mobile-screenshot](/design/splitter-mobile2.PNG?raw=true)
 
 
 ### Links
